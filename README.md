@@ -9,3 +9,4 @@ detect picture is porno content
 - support cpu, gpu run
 - support thread run
 
+### deeplearning model from https://github.com/yahoo/open_nsfw
