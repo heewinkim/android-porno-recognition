@@ -215,8 +215,8 @@ public class MainActivity extends AppCompatActivity {
             int pixel = pixels[i];        // ARGB : ff4e2a2a
 
             float r = ((pixel >> 16) & 0xff)-VGG_MEAN[0];
-            float g = ((pixel >> 16) & 0xff)-VGG_MEAN[1];
-            float b = ((pixel >> 16) & 0xff)-VGG_MEAN[2];
+            float g = ((pixel >> 8) & 0xff)-VGG_MEAN[1];
+            float b = ((pixel >> 0) & 0xff)-VGG_MEAN[2];
 
             // save to BGR color_model
             input_img.putFloat(b);
